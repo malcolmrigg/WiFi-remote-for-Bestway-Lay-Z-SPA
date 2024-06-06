@@ -554,7 +554,7 @@ void setupHA()
                                         /* Ready State sensor (Never, Ready, Not Ready) */
     doc[(_dev)] = devicedoc[(_dev)];
     payload.clear();
-    unique_id = mqttBaseTopic + F("_time_to_ready")+mychipid;
+    unique_id = mqttBaseTopic + F("_ready_state")+mychipid;
     topic = F(HA_PREFIX);
     topic += F("/sensor/");
     topic += unique_id;
